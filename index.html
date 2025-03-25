@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riyanka Pal</title>
+    <title>Riyanka Pal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            text-align: center;
+            padding: 30px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        h2, h3 {
+            color: #444;
+        }
+
+        /* Profile Picture */
+        .profile-img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; /* Circular */
+    object-fit: cover; /* Prevents stretching */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border: 3px solid #444; /* Optional border */
+}
+
+        /* Social Icons */
+        .social-icons a {
+            display: inline-block;
+            margin: 10px;
+            font-size: 24px;
+            color: #444; /* Changed from blue to dark gray */
+        }
+        .social-icons a:hover {
+            color: #222;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #444; /* Dark gray header */
+            color: white;
+        }
+        td {
+            background-color: #f8f9fa;
+        }
+        a {
+            color: #444; /* Dark gray for links */
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #222;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Riyanka Pal" class="profile-img">
+        <h1>Riyanka Pal</h1>
+        <h2>Software Engineer | Developer</h2>
+
+        <p>
+            I am a Software Engineer at Oracle, specializing in SQL, PySpark, Data Warehousing (DWT), and Oracle Cloud. 
+            I am passionate about problem-solving and programming, always eager to explore new technologies 
+            and optimize data-driven solutions.
+        </p>
+
+        <!-- Social Links -->
+        <div class="social-icons">
+            <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/RiyankaPal" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <h3>My Works</h3>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>URL</th>
+            </tr>
+            <tr>
+                <td>SQL Hackerrank Solution</td>
+                <td>SQL query solutions from Hackerrank challenges.</td>
+                <td><a href="https://riyankapals-organization.gitbook.io/sql-hackerrank-solution/hackerrank_sql_solution" target="_blank">View</a></td>
+            </tr>
+            <tr>
+                <td>Python Hackerrank Solution</td>
+                <td>Python coding challenge solutions.</td>
+                <td><a href="https://riyankapals-organization.gitbook.io/python-hackerrank-solution/" target="_blank">View</a></td>
+            </tr>
+            <tr>
+                <td>Data Analysis Project</td>
+                <td>Exploring movie data using Pandas.</td>
+                <td><a href="https://github.com/RiyankaPal/Python/blob/main/DataAnalysisProjectWithPandas/ExploreMovie.ipynb" target="_blank">View</a></td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 </html>
